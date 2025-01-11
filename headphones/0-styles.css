@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/headphones_hero_1.jpg");
+    object-fit: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 10px 20px;
+    z-index: 10;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-family: "source sans pro";
+}
+
+li a:hover {
+     color: #FF6565;
+     opacity: 0.9;
+     transition: all;
+     animation-duration: 800ms;
+     animation-timing-function: ease-in-out;
+}
+
+li a:active {
+    color: #FF6565;
+    opacity: 0.9;
+    transition: all;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    max-width: 1000px;
+    
+}
+
+h2 , h3 , p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 25%;
+    max-width: 90%;
+}
+
+h3 {
+    font-size: large;
+    font-weight: bold;
+    line-height: 0;
+}
+
+p {
+        color: aliceblue;
+        font-size: medium;
+        font-weight: smaller;
+        text-align: center;
+        max-width: 90%;
+        line-height: 24px;
+}
+
+button {
+    background-color: #FF6565;
+    color: white;
+    border-radius: 100px;
+    padding: 16px 32px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+    transition: all;
+    animation-duration: 800ms;
+}
+
+.menu_icon {
+    display: none;
+}
+
+.logo_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen  {
+    @media only screen and (max-width: 480px) {
+        nav {
+            width: 100%;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .menu_icon {
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        li a:hover,
+        li a:active {
+          color: #FF6565; 
+        }
+      
+      
+        button:hover,
+        button:active {
+          opacity: 0.9; 
+        }
+      }
+}
+

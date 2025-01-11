@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="./0-styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo_header">
+            <img src="./images/menu.png" width="50" height="40" alt="company_logo" id="menu_icon" class="menu_icon" onclick="handleclick()" />
+            <img src="./images/logo_headphones.png" width="150" height="40" alt="company_logo" />
+        </div>
+        <nav id="nav_bar">
+            <ul>
+                <li><a>what we do</a></li>
+                <li><a>our results</a></li>
+                <li><a>contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Lorem ipsum dolor set amet lorem ipsum</h2>
+        <h3>Lorem ipsum dolor set amet lorem ipsum</h3>
+        <button>CALL TO ACTION</button>
+        <p>Lorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsum</p>
+    </main>
+
+    <script>
+       let visibility = true;
+       const navBar =  document.getElementById("nav_bar")
+       const icon =  document.getElementById("menu_icon")
+
+       function handleclick(){
+        if(navBar.style.display !== "none"){
+            navBar.style.display = "none"
+            visibility = true;
+        }else {
+            navBar.style.display = "block"
+            visibility = false;
+        }
+       }
+    </script>
+</body>
+</html>

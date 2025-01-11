@@ -1,0 +1,109 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/headphones_hero_2.jpg");
+    object-fit: cover;
+   }
+   
+   main {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       min-height: 100dvh;
+       max-width: 1000px;
+       gap: 40px;
+   }
+   
+   h1 , p , h3 {
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color : white;
+   }
+   
+   h1 {
+       font-size: xx-large;
+       font-weight: bold;
+       text-align: center;
+   }
+   
+   p {
+       font-size: medium;
+       font-weight: smaller;
+       text-align: center;
+       max-width: 90%;
+       line-height: 24px;
+       max-width: 70%;
+   }
+   
+   section {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       align-items: center;
+       justify-content: space-between;
+       gap: 50px;
+   }
+   
+   .container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       
+   }
+   
+   .container p {
+       text-align: center;
+       max-width: 90%;
+   }
+
+   .info_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 2s infinite;
+
+   }
+
+   .info {
+    position: absolute;
+    bottom: 0;
+   }
+
+   .info h1 {
+    line-height: 0;
+    font-size: x-large;
+    text-align: center;
+   }
+   .info p {
+    font-size: small;
+    line-height: 16px;
+    text-align: center;
+   }
+
+   @media screen  {
+    @media only screen and (max-width: 480px) {
+        section {
+       display: grid;
+       grid-template-columns: 1fr ;
+       align-items: center;
+       justify-content: space-between;
+       gap: 50px;
+   }
+
+    }
+} 
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px) rotate(20deg);
+        opacity: 0.5;
+        scale: 1.2;
+    }
+}
